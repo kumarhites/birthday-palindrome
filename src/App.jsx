@@ -4,6 +4,13 @@ import { TiWarning } from "react-icons/ti";
 import './App.css'
 import loadingGif from './assets/cat-what.gif'
 
+//social iocns
+// social icons
+import github from "./assets/github.png"
+import linkedin from "./assets/linkedin.png"
+import twitter from "./assets/twitter.png"
+import portfolio from "./assets/business.png"
+
 function App() {
   const [output, setOutput] = useState("");
   const [date, setDate] = useState("")
@@ -27,11 +34,11 @@ function App() {
     const inputDate = dateArray[2]
     let flag = checkDatesCombo(inputYear, inputMonth, inputDate);
     if(flag){
-      newOutput = `yay! you're birthdate, in ${flag} format is palindrome 🎉`
+      newOutput = `✔ yay! you're birthdate, in ${flag} format is palindrome 🎉`
     }
     else{
       let [nextDate, diff] = findNextDate(inputDate, inputMonth, inputYear);
-      newOutput = `Ahh!!, you missed it by ${diff} days, Next palindrome date is ${nextDate}`
+      newOutput = `❌ Ahh!!, you missed it by ${diff} days, Next palindrome date is ${nextDate}`
     }
     setOutput(<p>{newOutput}</p>);
   }
@@ -123,6 +130,7 @@ function isLeapYear(year){
 
 
   return (
+    <>
     <div className="App">
       <div className="heading">
         <HiCalendar className='icon'/>&nbsp;
@@ -143,6 +151,28 @@ e.g. if your birthdate is <b>01 Aug 1995</b> , then app will check for <b>199508
         </div>
       </div>
     </div>
+    <footer>
+				<div className="socials">
+				<h3 id="foot-heading">Socials</h3>
+				<p>You can connect with me here</p>
+				<ul>
+					<li>
+						<a href="https://www.linkedin.com/in/hitesh-kumar09/"><img src={linkedin} alt="linkedin icon"/></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/hitesh091895"><img src={twitter} alt="twitter icon"/></a>
+					</li>
+					<li>
+						<a href="https://github.com/kumarhites"><img src={github} alt="github icon"/></a>
+					</li>
+					<li>
+						<a href="https://kumarhitesh.netlify.app/"><img src={portfolio} alt="portfolio"/></a>
+					</li>
+					</ul>
+				</div>
+			</footer>
+    </>
+    
   )
 }
 
