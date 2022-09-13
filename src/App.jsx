@@ -157,16 +157,16 @@ e.g. if your birthdate is <b>01 Aug 1995</b> , then app will check for <b>199508
 				<p>You can connect with me here</p>
 				<ul>
 					<li>
-						<a href="https://www.linkedin.com/in/hitesh-kumar09/"><img src={linkedin} alt="linkedin icon"/></a>
+						<a href="https://www.linkedin.com/in/hitesh-kumar09/" target="_blank"><img src={linkedin} alt="linkedin icon"/></a>
 					</li>
 					<li>
-						<a href="https://twitter.com/hitesh091895"><img src={twitter} alt="twitter icon"/></a>
+						<a href="https://twitter.com/hitesh091895" target="_blank"><img src={twitter} alt="twitter icon"/></a>
 					</li>
 					<li>
-						<a href="https://github.com/kumarhites"><img src={github} alt="github icon"/></a>
+						<a href="https://github.com/kumarhites" target="_blank"><img src={github} alt="github icon"/></a>
 					</li>
 					<li>
-						<a href="https://kumarhitesh.netlify.app/"><img src={portfolio} alt="portfolio"/></a>
+						<a href="https://kumarhitesh.netlify.app/" target="_blank"><img src={portfolio} alt="portfolio"/></a>
 					</li>
 					</ul>
 				</div>
